@@ -1,5 +1,6 @@
 import os
 from celery import Celery
+from celery.schedules import crontab
 
 app = Celery('tasks', broker=os.getenv("CELERY_BROKER_URL", "redis://localhost"))
 
