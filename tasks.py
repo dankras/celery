@@ -15,5 +15,5 @@ app.conf.beat_schedule = {
 
 @app.task
 def add(x, y):
-	print(x + y)
+    print(x + y)
     return x + y
